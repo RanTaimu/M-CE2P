@@ -1,0 +1,4 @@
+.flake8
+.python-version
+outputs/
+weights/

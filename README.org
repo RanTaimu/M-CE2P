@@ -1,0 +1,40 @@
+#+TITLE: M-CE2P
+
+* Introduction
+
+This respository includes a PyTorch implementation of M-CE2P that won the 1st places of Multi-Person Human Parsing Challenge(track2) and Fine-Grained Multi-Human Human Parsing Challenge(track5) in the 2nd LIP Challenge.
+
+The code is based upon [[https://github.com/liutinglt/CE2P][CE2P]].
+
+* Requirements
+
+  + Pytorch 0.3.1
+  + tqdm
+  + Pillow
+  + python-opencv
+  + other packages required by [[https://github.com/liutinglt/CE2P][CE2P]]
+
+* Basic Setup
+
+  Just do what [[https://github.com/liutinglt/CE2P][CE2P]] requires to do :)
+
+* Dataset and Model
+
+  Please download [[http://sysu-hcp.net/lip/overview.php][CIHP]] and [[https://lv-mhp.github.io/dataset][MHP v2.0]]. In the meanwhile, create a folder named =weights= in root folder of this project, download trained model(which are also used in our paper) from [[https://pan.baidu.com/s/1_YX2BqcxUihY4XgXcfm66A][Baidu Drive]] and put them into =weights=.
+
+* Evaluation
+** Human Mask and Bounding Box Generation
+   We use Mask R-CNN in [[https://github.com/facebookresearch/Detectron][Detectron]] to generate human masks and bounding boxes associated with an input image, and use the default configuration introduced in [[https://github.com/facebookresearch/Detectron/blob/master/GETTING_STARTED.md][Quick Start]].
+
+   For the convenience of users, we also provide the masks and boxes in [[https://pan.baidu.com/s/1_YX2BqcxUihY4XgXcfm66A][Baidu Drive]], which are generated on validation sets of the two datasets.
+
+** Run Inference
+   1. Modify ~USE_CIHP_DATA~ to run specific dataset.
+
+   2. Modify dataset related paths in =M-CE2P-test.py=.
+
+   3. Simply run =python M-CE2P-test.py= to generate the results(stored in =outputs= as default).
+
+** Evaluation
+
+   =metrics= folder contains all the metric codes used in our papar.

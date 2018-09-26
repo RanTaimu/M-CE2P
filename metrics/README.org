@@ -1,0 +1,11 @@
+#+TITLE: Metrics
+
+=evaluate.py= contains code associates with mean IoU, $AP^r$.
+
+=MHPv2= contains code associates with $PCP$, $AP^p$, which is a modified version of https://github.com/ZhaoJ9014/Multi-Human-Parsing_MHP. Modify =eval_submission.py= as you need it.
+
+=helper.py= generates help file for groundtruth to accelerate the computation of $AP^r$.
+
+=MHP2CIHP.py= convert dataset format to easy processing.
+
+=CIHP2MHP.py= convert dataset format to easy processing.
