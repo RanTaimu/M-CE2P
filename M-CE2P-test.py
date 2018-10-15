@@ -25,9 +25,9 @@ IMG_MEAN = np.array((104.00698793, 116.66876762, 122.67891434),
 
 if USE_CIHP_DATA:
   DATA_ROOT       = '/home/rantaimu/DataSpace/Dataset/Segmentation/LIP/instance-level_human_parsing' # noqa
-  TASK            = os.path.join(DATA_ROOT, 'Validation')
+  TASK            = os.path.join(DATA_ROOT, 'Play')
   IMAGE_DIR       = os.path.join(TASK, 'Images')
-  IMAGE_LIST_PATH = os.path.join(TASK, 'val_id.txt')
+  IMAGE_LIST_PATH = os.path.join(TASK, 'list.txt')
   BOX_DIR         = os.path.join(TASK, 'Boxes')
   SRC_SEGMAP_DIR  = os.path.join(TASK, 'SegMaps')
   MRCNN_WEIGHTS   = './weights/LIP_maskrcnn_edge_200000.pth'

@@ -2,3 +2,4 @@
 .python-version
 outputs/
 weights/
+__pycache__/

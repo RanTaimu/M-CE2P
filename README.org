@@ -1,5 +1,7 @@
 #+TITLE: M-CE2P
 
+The codes for generating masks and boxes for MHP v2.0 are now updated in =code_for_maskrcnn= folder. The process for CIHP dataset is similar with that for MHP v2.0.
+
 * Introduction
 
 This respository includes a PyTorch implementation of M-CE2P that won the 1st places of Multi-Person Human Parsing Challenge(track2) and Fine-Grained Multi-Human Human Parsing Challenge(track5) in the 2nd LIP Challenge.
@@ -22,11 +24,15 @@ The code is based upon [[https://github.com/liutinglt/CE2P][CE2P]].
 
   Please download [[http://sysu-hcp.net/lip/overview.php][CIHP]] and [[https://lv-mhp.github.io/dataset][MHP v2.0]]. In the meanwhile, create a folder named =weights= in root folder of this project, download trained model(which are also used in our paper) from [[https://pan.baidu.com/s/1_YX2BqcxUihY4XgXcfm66A][Baidu Drive]] and put them into =weights=.
 
+* Training
+
+  To train the model, please modify ./code_for_maskrcnn/MHP_infer_simple_train.py to fit your requirement and follow the step introduced in [[https://github.com/liutinglt/CE2P][CE2P]].
+
 * Evaluation
 ** Human Mask and Bounding Box Generation
    We use Mask R-CNN in [[https://github.com/facebookresearch/Detectron][Detectron]] to generate human masks and bounding boxes associated with an input image, and use the default configuration introduced in [[https://github.com/facebookresearch/Detectron/blob/master/GETTING_STARTED.md][Quick Start]].
 
-   For the convenience of users, we also provide the masks and boxes in [[https://pan.baidu.com/s/1_YX2BqcxUihY4XgXcfm66A][Baidu Drive]], which are generated on validation sets of the two datasets.
+   For the convenience of users, we also provide the masks and boxes in [[https://pan.baidu.com/s/1_YX2BqcxUihY4XgXcfm66A][Baidu Drive]], which are generated on validation sets of the two datasets. You can also use script =./code_for_maskrcnn/MHP_infer_simple_test.py= to generate by yourself.
 
 ** Run Inference
    1. Modify ~USE_CIHP_DATA~ to run specific dataset.
