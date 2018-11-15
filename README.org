@@ -32,7 +32,7 @@ The code is based upon [[https://github.com/liutinglt/CE2P][CE2P]].
 ** Human Mask and Bounding Box Generation
    We use Mask R-CNN in [[https://github.com/facebookresearch/Detectron][Detectron]] to generate human masks and bounding boxes associated with an input image, and use the default configuration introduced in [[https://github.com/facebookresearch/Detectron/blob/master/GETTING_STARTED.md][Quick Start]].
 
-   For the convenience of users, we also provide the masks and boxes in [[https://pan.baidu.com/s/1_YX2BqcxUihY4XgXcfm66A][Baidu Drive]], which are generated on validation sets of the two datasets. You can also use script =./code_for_maskrcnn/MHP_infer_simple_test.py= to generate by yourself.
+   For the convenience of users, we also provide the masks and boxes in [[https://pan.baidu.com/s/1_YX2BqcxUihY4XgXcfm66A][Baidu Drive]] and [[https://drive.google.com/open?id=1RF0UN-Csoyc7mkt9txVPKouzKZ2AZol9][Google Drive]], which are generated on validation sets of the two datasets. You can also use script =./code_for_maskrcnn/MHP_infer_simple_test.py= to generate by yourself.
 
 ** Run Inference
    1. Modify ~USE_CIHP_DATA~ to run specific dataset.
