@@ -22,7 +22,7 @@ The code is based upon [[https://github.com/liutinglt/CE2P][CE2P]].
 
 * Dataset and Model
 
-  Please download [[http://sysu-hcp.net/lip/overview.php][CIHP]] and [[https://lv-mhp.github.io/dataset][MHP v2.0]]. In the meanwhile, create a folder named =weights= in root folder of this project, download trained model(which are also used in our paper) from [[https://pan.baidu.com/s/1_YX2BqcxUihY4XgXcfm66A][Baidu Drive]] and put them into =weights=.
+  Please download [[http://sysu-hcp.net/lip/overview.php][CIHP]] and [[https://lv-mhp.github.io/dataset][MHP v2.0]]. In the meanwhile, create a folder named =weights= in root folder of this project, download trained model(which are also used in our paper) from [[https://pan.baidu.com/s/1zLWMfDTrPLc9kvis-I21bw][Baidu Drive(Code: yq8f)]] and put them into =weights=.
 
 * Training
 
